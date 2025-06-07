@@ -17,6 +17,7 @@
         "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
     ],
     "remoteUser": "vscode",
+    "postCreateCommand": "scripts/setup.sh",
     "features": {
         "ghcr.io/devcontainers/features/python:1": {
             "version": "3.12"
